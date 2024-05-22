@@ -1,0 +1,367 @@
+// Params를 붙여줘야 JSON parse로 호출 가능
+Params = [
+  {
+    "Nc": "KR",
+    "Count": 66859
+  },
+  {
+    "Nc": "CN",
+    "Count": 54979
+  },
+  {
+    "Nc": "JP",
+    "Count": 29044
+  },
+  {
+    "Nc": "TW",
+    "Count": 7674
+  },
+  {
+    "Nc": "AU",
+    "Count": 5836
+  },
+  {
+    "Nc": "IN",
+    "Count": 3086
+  },
+  {
+    "Nc": "US",
+    "Count": 1484
+  },
+  {
+    "Nc": "VN",
+    "Count": 1458
+  },
+  {
+    "Nc": "HK",
+    "Count": 1308
+  },
+  {
+    "Nc": "MY",
+    "Count": 1283
+  },
+  {
+    "Nc": "ID",
+    "Count": 1141
+  },
+  {
+    "Nc": "TH",
+    "Count": 1027
+  },
+  {
+    "Nc": "NZ",
+    "Count": 813
+  },
+  {
+    "Nc": "PH",
+    "Count": 657
+  },
+  {
+    "Nc": "SG",
+    "Count": 649
+  },
+  {
+    "Nc": "PK",
+    "Count": 173
+  },
+  {
+    "Nc": "Unknown",
+    "Count": 93
+  },
+  {
+    "Nc": "BD",
+    "Count": 83
+  },
+  {
+    "Nc": "BR",
+    "Count": 57
+  },
+  {
+    "Nc": "ZA",
+    "Count": 53
+  },
+  {
+    "Nc": "LK",
+    "Count": 51
+  },
+  {
+    "Nc": "GB",
+    "Count": 47
+  },
+  {
+    "Nc": "DE",
+    "Count": 36
+  },
+  {
+    "Nc": "EG",
+    "Count": 23
+  },
+  {
+    "Nc": "ES",
+    "Count": 21
+  },
+  {
+    "Nc": "NC",
+    "Count": 20
+  },
+  {
+    "Nc": "CA",
+    "Count": 19
+  },
+  {
+    "Nc": "SA",
+    "Count": 17
+  },
+  {
+    "Nc": "BN",
+    "Count": 15
+  },
+  {
+    "Nc": "SC",
+    "Count": 14
+  },
+  {
+    "Nc": "FR",
+    "Count": 14
+  },
+  {
+    "Nc": "ZM",
+    "Count": 13
+  },
+  {
+    "Nc": "NP",
+    "Count": 12
+  },
+  {
+    "Nc": "AR",
+    "Count": 11
+  },
+  {
+    "Nc": "GU",
+    "Count": 10
+  },
+  {
+    "Nc": "KH",
+    "Count": 10
+  },
+  {
+    "Nc": "NL",
+    "Count": 10
+  },
+  {
+    "Nc": "IT",
+    "Count": 8
+  },
+  {
+    "Nc": "CH",
+    "Count": 7
+  },
+  {
+    "Nc": "AF",
+    "Count": 7
+  },
+  {
+    "Nc": "CL",
+    "Count": 6
+  },
+  {
+    "Nc": "PT",
+    "Count": 6
+  },
+  {
+    "Nc": "GH",
+    "Count": 6
+  },
+  {
+    "Nc": "PS",
+    "Count": 6
+  },
+  {
+    "Nc": "MO",
+    "Count": 5
+  },
+  {
+    "Nc": "MX",
+    "Count": 5
+  },
+  {
+    "Nc": "GT",
+    "Count": 5
+  },
+  {
+    "Nc": "FJ",
+    "Count": 4
+  },
+  {
+    "Nc": "AT",
+    "Count": 4
+  },
+  {
+    "Nc": "TR",
+    "Count": 4
+  },
+  {
+    "Nc": "VE",
+    "Count": 3
+  },
+  {
+    "Nc": "MM",
+    "Count": 3
+  },
+  {
+    "Nc": "KW",
+    "Count": 3
+  },
+  {
+    "Nc": "CZ",
+    "Count": 3
+  },
+  {
+    "Nc": "HN",
+    "Count": 3
+  },
+  {
+    "Nc": "BE",
+    "Count": 3
+  },
+  {
+    "Nc": "RE",
+    "Count": 3
+  },
+  {
+    "Nc": "TO",
+    "Count": 3
+  },
+  {
+    "Nc": "YE",
+    "Count": 2
+  },
+  {
+    "Nc": "CV",
+    "Count": 2
+  },
+  {
+    "Nc": "IE",
+    "Count": 2
+  },
+  {
+    "Nc": "SV",
+    "Count": 2
+  },
+  {
+    "Nc": "SI",
+    "Count": 2
+  },
+  {
+    "Nc": "TN",
+    "Count": 2
+  },
+  {
+    "Nc": "BT",
+    "Count": 2
+  },
+  {
+    "Nc": "TL",
+    "Count": 2
+  },
+  {
+    "Nc": "RU",
+    "Count": 2
+  },
+  {
+    "Nc": "NO",
+    "Count": 2
+  },
+  {
+    "Nc": "NR",
+    "Count": 2
+  },
+  {
+    "Nc": "AE",
+    "Count": 2
+  },
+  {
+    "Nc": "MA",
+    "Count": 2
+  },
+  {
+    "Nc": "PG",
+    "Count": 2
+  },
+  {
+    "Nc": "CM",
+    "Count": 1
+  },
+  {
+    "Nc": "MV",
+    "Count": 1
+  },
+  {
+    "Nc": "LY",
+    "Count": 1
+  },
+  {
+    "Nc": "IR",
+    "Count": 1
+  },
+  {
+    "Nc": "LA",
+    "Count": 1
+  },
+  {
+    "Nc": "LT",
+    "Count": 1
+  },
+  {
+    "Nc": "NI",
+    "Count": 1
+  },
+  {
+    "Nc": "BG",
+    "Count": 1
+  },
+  {
+    "Nc": "PL",
+    "Count": 1
+  },
+  {
+    "Nc": "PF",
+    "Count": 1
+  },
+  {
+    "Nc": "PE",
+    "Count": 1
+  },
+  {
+    "Nc": "KP",
+    "Count": 1
+  },
+  {
+    "Nc": "LU",
+    "Count": 1
+  },
+  {
+    "Nc": "BW",
+    "Count": 1
+  },
+  {
+    "Nc": "UG",
+    "Count": 1
+  },
+  {
+    "Nc": "SE",
+    "Count": 1
+  },
+  {
+    "Nc": "FI",
+    "Count": 1
+  },
+  {
+    "Nc": "IL",
+    "Count": 1
+  },
+  {
+    "Nc": "UA",
+    "Count": 1
+  }
+]
