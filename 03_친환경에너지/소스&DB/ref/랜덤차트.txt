@@ -1,0 +1,59 @@
+private void LoadConsumptionDataAndDisplayChart()
+{
+    // 임의의 데이터 생성
+    Random random = new Random();
+    List<int> storageCapacity = new List<int>();
+    List<int> generation = new List<int>();
+    List<int> idlePower = new List<int>();
+    List<int> consumption = new List<int>();
+
+    int totalStorageCapacity = 0;
+    int totalGeneration = 0;
+    int totalIdlePower = 0;
+    int totalConsumption = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        int sc = random.Next(1000, 2000);
+        int gen = random.Next(800, 1500);
+        int ip = random.Next(100, 500);
+        int cons = random.Next(700, 1300);
+
+        storageCapacity.Add(sc);
+        generation.Add(gen);
+        idlePower.Add(ip);
+        consumption.Add(cons);
+
+        totalStorageCapacity += sc;
+        totalGeneration += gen;
+        totalIdlePower += ip;
+        totalConsumption += cons;
+    }
+
+    // 차트에 데이터 추가
+    cht_PwrCons1.Series.Clear();
+    cht_PwrCons1.Series.Add("Storage Capacity");
+    cht_PwrCons1.Series.Add("Generation");
+    cht_PwrCons1.Series.Add("Idle Power");
+    cht_PwrCons1.Series.Add("Consumption");
+
+    for (int i = 0; i < storageCapacity.Count; i++)
+    {
+        cht_PwrCons1.Series["Storage Capacity"].Points.AddY(storageCapacity[i]);
+        cht_PwrCons1.Series["Generation"].Points.AddY(generation[i]);
+        cht_PwrCons1.Series["Idle Power"].Points.AddY(idlePower[i]);
+        cht_PwrCons1.Series["Consumption"].Points.AddY(consumption[i]);
+    }
+
+    // 각 항목의 총합을 라벨에 표시
+    lbl_Cons1.Text = totalStorageCapacity.ToString();
+    label14.Text = totalGeneration.ToString();
+    label15.Text = totalIdlePower.ToString();
+    label16.Text = totalConsumption.ToString();
+
+    // 범례 설정
+    cht_PwrCons1.Series["Storage Capacity"].LegendText = "저장용량";
+    cht_PwrCons1.Series["Generation"].LegendText = "발전량";
+    cht_PwrCons1.Series["Idle Power"].LegendText = "유휴 전력";
+    cht_PwrCons1.Series["Consumption"].LegendText = "소비량";
+}
